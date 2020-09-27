@@ -146,7 +146,7 @@ form>input {
 .valider:hover {
     padding: 32px;
     font-size: 1em;
-    box-shadow: 4px 4px 4px #ccc;
+    box-shadow: 4px 4px 4px #000;
 }
 
 /* INSTRUCTIONS */
@@ -170,6 +170,7 @@ form>input {
     main {
         grid-template-columns: 1fr;
         justify-items: center;
+        background: radial-gradient(#fff,#acbfc7);
     }
 
     .titre {
@@ -178,7 +179,7 @@ form>input {
 
     .question {
         grid-column-start: 1;
-        width: 95%;
+        width: 90%;
     }
 
     form {
