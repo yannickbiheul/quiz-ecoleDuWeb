@@ -28,6 +28,8 @@ main {
     grid-gap: 20px;
 }
 
+/* TITRE */
+
 .titre {
     width: 100%;
     height: auto;
@@ -38,6 +40,8 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+/* QUESTIONS */
 
 .question {
     width: 100%;
@@ -106,6 +110,8 @@ form>input {
     grid-column-start: 2;
 }
 
+/* VALIDATION */
+
 .validation {
     grid-column-start: 2;
     grid-row-start: 7;
@@ -133,6 +139,8 @@ form>input {
     font-size: 1em;
     box-shadow: 4px 4px 4px #ccc;
 }
+
+/* INSTRUCTIONS */
 
 .instructions {
     width: 100%;
