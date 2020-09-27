@@ -77,10 +77,14 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--bc), url(../images/paris.jpg);
+    background: var(--bc), url(../images/france.jpg);
     background-size: cover;
     background-position: center;
     color: #fff;
+}
+
+.titre>h1 {
+    text-shadow: 1px 1px 4px #000;
 }
 
 /* QUESTIONS */
