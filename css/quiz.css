@@ -3,7 +3,6 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: var(--roboto);
-    overflow: hidden;
 }
 
 :root {
@@ -23,9 +22,128 @@ main {
     width: 100%;
     min-height: 100%;
     box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 20px;
+}
+
+.titre {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #000; */
+    grid-column-start: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.question {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+}
+
+.titreQuestion {
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+form {
+    margin: 40px 
+}
+
+form>p {
+    font-weight: bold;
+}
+
+form>input {
+    margin-right: 10px;
+}
+
+.explications {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    width: 50%;
+    height: 100px;
+    /* border: 1px solid #000; */
+}
+
+.question1 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.question2 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+.question3 {
+    grid-row-start: 4;
+    grid-column-start: 2;
+}
+
+.question4 {
+    grid-row-start: 5;
+    grid-column-start: 2;
+}
+
+.question5 {
+    grid-row-start: 6;
+    grid-column-start: 2;
+}
+
+.validation {
+    grid-column-start: 2;
+    grid-row-start: 7;
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.valider {
+    padding: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #ccc;
+    background-color: var(--blue);
+    color: #fff;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.valider:hover {
+    padding: 32px;
+    font-size: 1em;
+    box-shadow: 4px 4px 4px #ccc;
+}
+
+.instructions {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #000; */
+    grid-column-start: 2;
+    grid-row-start: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
