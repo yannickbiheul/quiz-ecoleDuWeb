@@ -155,3 +155,36 @@ form>input {
     color: #fff;
 }
 
+
+
+@media screen and (max-width: 1200px) {
+    main {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .titre {
+        grid-column-start: 1;
+    }
+
+    .question {
+        grid-column-start: 1;
+        width: 95%;
+    }
+
+    form {
+        margin: 40px 40px 40px 10px
+    }
+
+    .explications {
+        display: none;
+    }
+
+    .validation {
+        grid-column-start: 1;
+    }
+
+    .instructions {
+        grid-column-start: 1;
+    }
+}
