@@ -13,6 +13,7 @@ let userReponse1 = "";
 for (let i = 0; i < reponsesQ1.length; i++) {
     reponsesQ1[i].addEventListener("click", function() {
         userReponse1 = reponsesQ1[i].value;
+        console.log(userReponse1);
     })
 }
 
@@ -28,5 +29,22 @@ let userReponse2 = "";
 for (let i = 0; i < reponsesQ2.length; i++) {
     reponsesQ2[i].addEventListener("click", function () {
         userReponse2 = reponsesQ2[i].value;
+        console.log(userReponse2);
+    })
+}
+
+// QUESTION 3
+let reponse1q3 = document.getElementById("q3r1");
+let reponse2q3 = document.getElementById("q3r2");
+let reponse3q3 = document.getElementById("q3r3");
+let reponse4q3 = document.getElementById("q3r4");
+let reponsesQ3 = [reponse1q3, reponse2q3, reponse3q3, reponse4q3];
+let bonneReponse1q3 = "q3r3";
+let userReponse3 = "";
+
+for (let i = 0; i < reponsesQ3.length; i++) {
+    reponsesQ3[i].addEventListener("click", function () {
+        userReponse3 = reponsesQ3[i].value;
+        console.log(userReponse3);
     })
 }
