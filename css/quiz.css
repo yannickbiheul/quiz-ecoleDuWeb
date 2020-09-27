@@ -15,7 +15,7 @@ html, body {
     --pico: #192a56;
     --black: #2f3640;
     /* BACKGROUND */
-    --bc: linear-gradient(rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%);
+    --bc: linear-gradient(rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%);
 }
 
 main {
@@ -39,6 +39,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: var(--bc), url(../images/paris.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
 }
 
 /* QUESTIONS */
