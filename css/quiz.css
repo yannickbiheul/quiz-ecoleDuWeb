@@ -26,9 +26,9 @@ main {
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: repeat(8, 1fr);
     grid-gap: 20px;
-    background: var(--bc), url(../images/automne2.jpg);
+    /* background: var(--bc), url(../images/automne2.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
 /* TITRE */
@@ -55,7 +55,7 @@ main {
     height: auto;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 4px 4px 4px #000;
+    box-shadow: 4px 4px 4px #ccc;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,7 +137,7 @@ form>input {
     padding: 30px;
     border: none;
     border-radius: 5px;
-    box-shadow: 2px 2px 4px #000;
+    box-shadow: 2px 2px 4px #ccc;
     background-color: var(--blue);
     color: #fff;
     cursor: pointer;
@@ -146,7 +146,7 @@ form>input {
 .valider:hover {
     padding: 32px;
     font-size: 1em;
-    box-shadow: 4px 4px 4px #000;
+    box-shadow: 4px 4px 4px #ccc;
 }
 
 /* INSTRUCTIONS */
@@ -170,7 +170,6 @@ form>input {
     main {
         grid-template-columns: 1fr;
         justify-items: center;
-        background: radial-gradient(#fff,#acbfc7);
     }
 
     .titre {

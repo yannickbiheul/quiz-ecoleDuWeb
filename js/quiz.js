@@ -13,11 +13,6 @@ let userReponse1 = "";
 for (let i = 0; i < reponsesQ1.length; i++) {
     reponsesQ1[i].addEventListener("click", function() {
         userReponse1 = reponsesQ1[i].value;
-        if (userReponse1 == bonneReponse1q1) {
-            question[0].style.backgroundColor = "var(--green)";
-        } else {
-            question[0].style.backgroundColor = "var(--red)";
-        }
     })
 }
 
@@ -33,10 +28,5 @@ let userReponse2 = "";
 for (let i = 0; i < reponsesQ2.length; i++) {
     reponsesQ2[i].addEventListener("click", function () {
         userReponse2 = reponsesQ2[i].value;
-        if (userReponse2 == bonneReponse1q2) {
-            question[1].style.backgroundColor = "var(--green)";
-        } else {
-            question[1].style.backgroundColor = "var(--red)";
-        }
     })
 }
